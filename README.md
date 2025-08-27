@@ -69,8 +69,8 @@ This project extensively leveraged AI throughout the development lifecycle:
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd studyai
+   git clone https://github.com/Yesmaz/amplify-developer
+   cd amplify-developer
    ```
 
 2. **Install dependencies**
@@ -179,6 +179,13 @@ The application features:
 - Responsive mobile layout
 - Smooth animations and transitions
 
+
+## ⚠️ Known Issues
+- `npm audit` reports 3 moderate vulnerabilities from `esbuild` via `vite`.
+- Currently, no fix is available from the maintainers.
+- Since this is a prototype (development mode only), these vulnerabilities do not affect production.
+
+
 ## 🚀 Deployment
 
 This project can be deployed to:
@@ -206,15 +213,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Team
 
-**Built by**: [Your Name]  
+**Built by**: ELAKPA RAPHAEL  
 **Course**: Foundations of Generative AI for Developers  
-**Institution**: [Your Institution]
+**Institution**: LEARN2EARN
 
 ## 🔗 Links
 
 - **Live Demo**: [https://studyai-demo.vercel.app](https://studyai-demo.vercel.app)
-- **GitHub Repository**: [https://github.com/yourusername/studyai](https://github.com/yourusername/studyai)
-- **Demo Video**: [Link to demo video]
+- **GitHub Repository: https://github.com/Yesmaz/amplify-developer         
 
 ---
 
