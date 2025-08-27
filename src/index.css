@@ -2,41 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* Smart Study Assistant Design System - Academic Excellence Theme 
+All colors MUST be HSL for perfect theming.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Academic Color Palette */
+    --background: 240 20% 99%;
+    --foreground: 237 20% 15%;
 
+    /* Card System */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 237 20% 15%;
 
+    /* Interactive Elements */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 237 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Academic Blue */
+    --primary: 225 70% 45%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 225 60% 85%;
+    --primary-dark: 225 80% 35%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Success & Progress Green */
+    --secondary: 142 70% 45%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 142 50% 85%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Subtle Backgrounds */
+    --muted: 225 20% 96%;
+    --muted-foreground: 237 15% 45%;
+    
+    /* Accent Purple for AI Features */
+    --accent: 265 70% 60%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 265 50% 90%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Warning & Important */
+    --warning: 38 90% 60%;
+    --warning-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Destructive */
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & Inputs */
+    --border: 225 20% 88%;
+    --input: 225 20% 92%;
+    --ring: 225 70% 45%;
 
-    --radius: 0.5rem;
+    /* Beautiful Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(225 70% 45%), hsl(265 70% 60%));
+    --gradient-secondary: linear-gradient(135deg, hsl(142 70% 45%), hsl(225 70% 45%));
+    --gradient-accent: linear-gradient(135deg, hsl(265 70% 60%), hsl(285 70% 65%));
+    --gradient-subtle: linear-gradient(180deg, hsl(225 20% 99%), hsl(225 20% 96%));
+
+    /* Elegant Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(225 70% 45% / 0.2);
+    --shadow-glow: 0 0 40px hsl(265 70% 60% / 0.15);
+    --shadow-card: 0 4px 20px -4px hsl(225 20% 15% / 0.1);
+
+    /* Smooth Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --radius: 12px;
 
     --sidebar-background: 0 0% 98%;
 
