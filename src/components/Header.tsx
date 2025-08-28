@@ -16,24 +16,31 @@ const Header = () => {
         </div>
         
         <nav className="hidden md:flex items-center gap-6">
-          <a href="#features" className="text-foreground hover:text-primary transition-smooth">
+          <a href="/features" className="text-foreground hover:text-primary transition-smooth">
             Features
           </a>
-          <a href="#dashboard" className="text-foreground hover:text-primary transition-smooth">
+          <a href="/dashboard" className="text-foreground hover:text-primary transition-smooth">
             Dashboard
           </a>
-          <a href="#about" className="text-foreground hover:text-primary transition-smooth">
+          <a href="/about" className="text-foreground hover:text-primary transition-smooth">
             About
+          </a>
+          <a href="/contact" className="text-foreground hover:text-primary transition-smooth">
+            Contact
           </a>
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button variant="outline-primary" size="sm">
-            <User className="w-4 h-4" />
-            Login
+          <Button variant="outline-primary" size="sm" asChild>
+            <a href="/contact">
+              <User className="w-4 h-4" />
+              Login
+            </a>
           </Button>
-          <Button variant="hero" size="sm">
-            Get Started
+          <Button variant="hero" size="sm" asChild>
+            <a href="/about">
+              Get Started
+            </a>
           </Button>
         </div>
       </div>

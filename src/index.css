@@ -68,6 +68,12 @@ All colors MUST be HSL for perfect theming.
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
+    /* Animations */
+    --animation-bounce: bounce 2s infinite;
+    --animation-float: float 6s ease-in-out infinite;
+    --animation-pulse-slow: pulse 3s ease-in-out infinite;
+    --animation-glow: glow 2s ease-in-out infinite alternate;
+
     --radius: 12px;
 
     --sidebar-background: 0 0% 98%;
@@ -124,6 +130,30 @@ All colors MUST be HSL for perfect theming.
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
+}
+
+/* Keyframe animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  from { box-shadow: 0 0 20px hsl(var(--primary) / 0.5); }
+  to { box-shadow: 0 0 30px hsl(var(--primary) / 0.8), 0 0 40px hsl(var(--primary) / 0.3); }
+}
+
+/* Animation utility classes */
+.animate-float {
+  animation: var(--animation-float);
+}
+
+.animate-glow {
+  animation: var(--animation-glow);
+}
+
+.animate-pulse-slow {
+  animation: var(--animation-pulse-slow);
 }
 
 @layer base {

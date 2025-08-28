@@ -31,13 +31,17 @@ const Hero = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="group">
-                Start Learning Now
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              <Button variant="hero" size="lg" className="group" asChild>
+                <a href="/features">
+                  Explore Features
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
-              <Button variant="outline-primary" size="lg">
-                <BookOpen className="w-5 h-5" />
-                Watch Demo
+              <Button variant="outline-primary" size="lg" asChild>
+                <a href="/dashboard">
+                  <BookOpen className="w-5 h-5" />
+                  View Dashboard
+                </a>
               </Button>
             </div>
 
