@@ -19,6 +19,9 @@ const Header = () => {
           <a href="/features" className="text-foreground hover:text-primary transition-smooth">
             Features
           </a>
+          <a href="/resources" className="text-foreground hover:text-primary transition-smooth">
+            Resources
+          </a>
           <a href="/dashboard" className="text-foreground hover:text-primary transition-smooth">
             Dashboard
           </a>
@@ -32,13 +35,13 @@ const Header = () => {
 
         <div className="flex items-center gap-3">
           <Button variant="outline-primary" size="sm" asChild>
-            <a href="/contact">
+            <a href="/login">
               <User className="w-4 h-4" />
               Login
             </a>
           </Button>
           <Button variant="hero" size="sm" asChild>
-            <a href="/about">
+            <a href="/register">
               Get Started
             </a>
           </Button>

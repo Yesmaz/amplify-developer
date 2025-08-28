@@ -36,10 +36,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Features</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#" className="hover:text-accent transition-smooth">AI Study Plans</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">Smart Quizzes</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">Progress Analytics</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">Note Organization</a></li>
+              <li><a href="/features" className="hover:text-accent transition-smooth">AI Study Plans</a></li>
+              <li><a href="/features" className="hover:text-accent transition-smooth">Smart Quizzes</a></li>
+              <li><a href="/dashboard" className="hover:text-accent transition-smooth">Progress Analytics</a></li>
+              <li><a href="/resources" className="hover:text-accent transition-smooth">Learning Resources</a></li>
             </ul>
           </div>
 
@@ -47,10 +47,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#" className="hover:text-accent transition-smooth">Documentation</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">API Reference</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">User Guide</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">Support</a></li>
+              <li><a href="/resources" className="hover:text-accent transition-smooth">Programming</a></li>
+              <li><a href="/resources" className="hover:text-accent transition-smooth">Science</a></li>
+              <li><a href="/resources" className="hover:text-accent transition-smooth">File Upload</a></li>
+              <li><a href="/dashboard" className="hover:text-accent transition-smooth">Dashboard</a></li>
             </ul>
           </div>
 
@@ -58,10 +58,10 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-primary-foreground/80">
-              <li><a href="#" className="hover:text-accent transition-smooth">About Us</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">Terms of Service</a></li>
-              <li><a href="#" className="hover:text-accent transition-smooth">Contact</a></li>
+              <li><a href="/about" className="hover:text-accent transition-smooth">About Us</a></li>
+              <li><a href="/contact" className="hover:text-accent transition-smooth">Contact</a></li>
+              <li><a href="/login" className="hover:text-accent transition-smooth">Login</a></li>
+              <li><a href="/register" className="hover:text-accent transition-smooth">Register</a></li>
             </ul>
           </div>
         </div>
